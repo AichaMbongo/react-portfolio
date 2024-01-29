@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
+import ImageCard  from './components/ImageCard';
 import { SectionLight, SectionDark }  from './components/section';
 
 const App = () => {
@@ -65,6 +66,8 @@ const App = () => {
     </>
   }
   />
+
+
      
 
      
