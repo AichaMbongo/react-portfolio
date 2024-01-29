@@ -6,7 +6,7 @@ import Carousel from './components/Carousel';
 import ImageCard  from './components/ImageCard';
 import { SingleImageTextSection, DoubleImageTextSection, PlainLightSection }  from './components/section';
 import React, { useState } from 'react';
-
+import './index.css'; 
 const App = () => {
 
   const images = [
@@ -104,7 +104,18 @@ const App = () => {
         <ImageCard
           imageSrc="/FreshFields.png"
           title="Project 1"
-          description="Description of Project 1."
+          description={
+            <>
+            Fresh Fields marked one of my initial projects, serving as an ecommerce 
+                  <span id="dots-5">...</span>
+                  <span id="more-5" className="hidden">
+                    platform designed specifically for rural farmers. Developed using PHP and HTML, the web platform utilized a MariaDB (SQL database) to meet its objectives.
+                  </span>
+                  <a id="readMoreBtn-5" onClick={() => setIsExpanded(!isExpanded)} className="text-primary">
+              {isExpanded ? 'Read Less' : 'Read More'}
+            </a>            
+            </>
+          }
           link="https://example.com/project1"
         />
         <ImageCard
@@ -114,14 +125,14 @@ const App = () => {
             <>
             I led a Data science project, focusing on exploratory data analysis, 
                   <span id="dots-2">...</span>
-                  <span id="more-2" style="display: none;">
+                  <span id="more-2" className="hidden">
                     preprocessing, model training, and hyper-parameter tuning.
                     The project involved loading datasets, performing statistical analysis, creating visualizations,
                     and applying various data transformations. Additionally, I trained and evaluated multiple models,
                     conducted hyper-parameter tuning using a "Random Search," and implemented ensemble methods like Bagged CART.
                     The final consolidation included the development of a Plumber API and PHP output for effective model deployment.
                   </span>
-                  <a id="readMoreBtn-4" onClick={() => setIsExpanded(!isExpanded)} className="text-primary">
+                  <a id="readMoreBtn-2" onClick={() => setIsExpanded(!isExpanded)} className="text-primary">
                   {isExpanded ? 'Read Less' : 'Read More'}
                 </a>
                   </>
@@ -152,25 +163,25 @@ const App = () => {
           
           link="https://example.com/project2"
         />
-<ImageCard
-  imageSrc="/SUAttachment.png"
-  title="Project 2"
-  description={
-    <>
-      I spearheaded a project to enhance Strathmore's student attachment portal.
-      <span id="dots-1">...</span>
-      <span id="more-1" style={{ display: 'none' }}>
-        I played a pivotal role in defining the system requirements and implementing improvements.
-        Utilizing the Trello project management tool, I efficiently mapped out the entire project trajectory.
-      </span>
-      <a id="readMoreBtn-1" onClick={() => toggleText(1)} className="text-primary">
-        {isExpanded ? 'Read Less' : 'Read More'}
-      </a>
-      <br />
-    </>
-  }
-  link="https://example.com/project2"
-/>
+            <ImageCard
+              imageSrc="/SUAttachment.png"
+              title="Project 2"
+              description={
+                <>
+                  I spearheaded a project to enhance Strathmore's student attachment portal.
+                  <span id="dots-1">...</span>
+                  <span id="more-1" className="hidden">
+                    I played a pivotal role in defining the system requirements and implementing improvements.
+                    Utilizing the Trello project management tool, I efficiently mapped out the entire project trajectory.
+                  </span>
+                  <a id="readMoreBtn-1" onClick={() => toggleText(1)} className="text-primary">
+                    {isExpanded ? 'Read Less' : 'Read More'}
+                  </a>
+                  <br />
+                </>
+              }
+              link="https://example.com/project2"
+            />
         </PlainLightSection>
         
      
