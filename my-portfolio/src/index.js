@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
 import ImageCard  from './components/ImageCard';
-import { SectionLight, SectionDark }  from './components/section';
+import { SingleImageTextSection, DoubleImageTextSection }  from './components/section';
 
 const App = () => {
 
@@ -20,7 +20,7 @@ const App = () => {
       
       <Carousel images={images} />
       
-      <SectionLight
+      <SingleImageTextSection
         id="section1"
         title="About Me"
         imageSrc="/laptop.jpeg"
@@ -36,7 +36,7 @@ const App = () => {
            of technology, creativity, and business!"
       />
       
-      <SectionDark
+      <DoubleImageTextSection
   id="section2"
   title="Work Experience"
   imageSrc1="/atlancis.jpg"  

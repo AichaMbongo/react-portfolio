@@ -1,7 +1,7 @@
 // Section.js
 import React from 'react';
 
-const SectionLight = ({ id, title, imageSrc, description }) => {
+const SingleImageTextSection = ({ id, title, imageSrc, description }) => {
   return (
     <section id={id} className="container mt-4 mb-4 col-md-12">
       <div className="card mb-4 rounded col-md-12 bg-light mb-4 shadow-lg">
@@ -9,7 +9,7 @@ const SectionLight = ({ id, title, imageSrc, description }) => {
           <div className="col-md-4 rounded">
             <img src={imageSrc} className="img-fluid rounded" alt="..." />
           </div>
-          
+
           <div className="col-md-8">
             <div className="card-body">
               <h5 className="card-title">{title}</h5>
@@ -22,7 +22,7 @@ const SectionLight = ({ id, title, imageSrc, description }) => {
   );
 };
 
-const SectionDark = ({ id, title, imageSrc1, imageSrc2, description }) => {
+const DoubleImageTextSection = ({ id, title, imageSrc1, imageSrc2, description }) => {
   return (
     <section id={id} className="container mt-4 mb-4 col-md-12 bg-dark">
       <div className="card mb-4 rounded col-md-12 bg-light mb-4 shadow-lg bg-dark text-white">
@@ -44,4 +44,4 @@ const SectionDark = ({ id, title, imageSrc1, imageSrc2, description }) => {
     </section>
   );
 };
-export { SectionLight, SectionDark };
+export { SingleImageTextSection, DoubleImageTextSection };
