@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
   return (
@@ -24,8 +25,31 @@ const Navbar = () => {
               About Me <span className="sr-only">(current)</span>
             </a>
           </li>
-          {/* Add more list items for other sections */}
-          {/* ... */}
+          <li class="nav-item">
+                <a class="nav-link" href="#section2">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">Work Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section5">Skills</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#section6">References</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#section7">Hobbies</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#section8">Contacts</a>
+            </li>
+
           <li className="nav-item">
             <a className="btn btn-danger" href="src/documents/AichaCV.pdf" target="_blank">
               Download CV
