@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
 import ImageCard  from './components/ImageCard';
-import { SingleImageTextSection, DoubleImageTextSection }  from './components/section';
+import { SingleImageTextSection, DoubleImageTextSection, PlainLightSection }  from './components/section';
 
 const App = () => {
 
