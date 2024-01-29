@@ -9,6 +9,7 @@ const SectionLight = ({ id, title, imageSrc, description }) => {
           <div className="col-md-4 rounded">
             <img src={imageSrc} className="img-fluid rounded" alt="..." />
           </div>
+          
           <div className="col-md-8">
             <div className="card-body">
               <h5 className="card-title">{title}</h5>
