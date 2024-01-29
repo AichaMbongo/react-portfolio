@@ -19,22 +19,6 @@ const ImageCard = ({ imageSrc, title, description, link }) => {
         <div className="card-body">
           <p className="card-text">
             {description}
-            {isExpanded && (
-              <>
-                <br />
-                <a onClick={toggleText} className="text-primary">
-                  Read Less
-                </a>
-              </>
-            )}
-            {!isExpanded && (
-              <>
-                <br />
-                {/* <a onClick={toggleText} className="text-primary">
-                  Read More
-                </a> */}
-              </>
-            )}
             <br />
             <a href={link} target="_blank">
               View project
