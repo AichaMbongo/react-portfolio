@@ -13,9 +13,13 @@ const ChuckNorrisJoke = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Chuck Norris Joke:</h2>
-      <p>{joke}</p>
+    <div className="container mt-4 bg-dark rounded">
+      <div className="card bg-dark text-white">
+        <div className="card-body ">
+          <h2 className="card-title text-center">Chuck Norris Joke</h2>
+          <p className="card-text text-center">{joke}</p>
+        </div>
+      </div>
     </div>
   );
 };

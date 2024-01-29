@@ -50,7 +50,7 @@ const DoubleImageTextSection = ({ id, title, imageSrc1, imageSrc2, description }
 
 const PlainLightSection = ({ id, title, children }) => {
   return (
-    <section id={id} className="container mt-4">
+    <section id={id} className="container mt-4 bg-light">
       <h2 className="text-center mb-4">{title}</h2>
       <div className="row g-2">
         {children}
