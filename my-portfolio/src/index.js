@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
 import ImageCard  from './components/ImageCard';
+import Skill  from './components/ProgressBar';
 import { SingleImageTextSection, DoubleImageTextSection, PlainLightSection }  from './components/section';
 import React, { useState } from 'react';
 import './index.css'; 
@@ -32,6 +33,33 @@ const App = () => {
     }
   };
 
+  const skills = [
+    { name: 'React.js', value: 80, color: '' },
+    { name: 'Django Framework', value: 70, color: 'success' },
+    { name: 'MySQL', value: 60, color: 'info' },
+    { name: 'Chart Js', value: 75, color: 'warning' },
+    { name: 'Git', value: 90, color: 'danger' },
+    { name: 'R', value: 85, color: 'primary' },
+    { name: 'AWS', value: 50, color: 'secondary' },
+    { name: 'Trello Project Management', value: 85, color: 'info' },
+    { name: 'Linux Ubuntu', value: 70, color: 'success' },
+    { name: 'JavaScript', value: 80, color: 'warning' },
+  ];
+  
+  const SkillsSection = () => (
+    <section id="section5" className="container mt-4 bg-light col-md-12 mb-4">
+      <div className="container mt-4 bg-transparent col-md-12 mb-4">
+        <h2 className="text-center mb-4">My Skills</h2>
+        <div className="row mb-4">
+          {skills.map((skill, index) => (
+            <Skill key={index} {...skill} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+
+ 
   return (
     <div>
       <Navbar />
@@ -87,8 +115,9 @@ const App = () => {
 
 
 
-      <PlainLightSection id="Section3" title="My Projects">
-      <SingleImageTextSection
+      <PlainLightSection id="section3" title="My Projects">
+        <SingleImageTextSection
+        
               
             
               imageSrc="/CVDetect.png"
@@ -185,7 +214,7 @@ const App = () => {
         </PlainLightSection>
         
      
-
+        <SkillsSection />
      
     </div>
   );
