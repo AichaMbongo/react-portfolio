@@ -19,6 +19,21 @@ const App = () => {
       
       <Carousel images={images} />
       
+      <Section
+        id="section1"
+        title="About Me"
+        imageSrc="/back1.png"
+        description="Hello, I'm Myriam Aicha Mbongo-zindamoyen, a BBIT graduate from Strathmore 
+        University with a strong focus on Business and IT. As a creative junior front-end developer,
+        I'm passionate about delivering exceptional user experiences and expanding my skills in full-stack
+         development. I have hands-on experience in Business Intelligence, specifically in DataOps, and have 
+         delved into the realm of Machine Learning. My interest in AI extends to several projects I've undertaken, 
+         showcasing my dedication to exploring the cutting-edge intersections of technology. Having undertaken various
+          leadership roles, I've honed not only technical skills but also effective communication and team management. 
+          Beyond technology, I'm a singer, painter, and hiking enthusiast, showcasing a diverse range of talents
+           including video editing, and restoration crafts. Let's connect and explore the exciting intersections 
+           of technology, creativity, and business!"
+      />
 
      
 
