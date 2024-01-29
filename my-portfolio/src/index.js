@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
-import Section from './components/section';
+import { SectionLight, SectionDark }  from './components/section';
 
 const App = () => {
 
@@ -19,10 +19,10 @@ const App = () => {
       
       <Carousel images={images} />
       
-      <Section
+      <SectionLight
         id="section1"
         title="About Me"
-        imageSrc="/back1.png"
+        imageSrc="/laptop.jpeg"
         description="Hello, I'm Myriam Aicha Mbongo-zindamoyen, a BBIT graduate from Strathmore 
         University with a strong focus on Business and IT. As a creative junior front-end developer,
         I'm passionate about delivering exceptional user experiences and expanding my skills in full-stack
@@ -34,7 +34,37 @@ const App = () => {
            including video editing, and restoration crafts. Let's connect and explore the exciting intersections 
            of technology, creativity, and business!"
       />
-
+      
+      <SectionDark
+  id="section2"
+  title="Work Experience"
+  imageSrc1="/atlancis.jpg"  
+  imageSrc2="/atlancis2.jpg"  
+  description={
+    <>
+      <b>DevOps intern at ATLANCIS Technologies</b>
+      <br />
+      January 2023 - April 2023
+      <br />
+      <br />
+      My internship experience as a DevOps intern at Atlancis has been invaluable in 
+      my professional development as a future IT specialist. Collaborating with colleagues,
+      I navigated various tools and platforms, including GitHub, GitLab, Ubuntu, and popular 
+      web frameworks like Django and React. My practical experience encompasses deployment automation, 
+      containerization, continuous integration and deployment (CI/CD), and cloud computing - crucial skills for 
+      a DevOps engineer.
+      <br />
+      <br />
+      <b>Volunteer teacher at All Saints Primary School - Nairobi, Kenya</b>
+      <br />
+      January 2021 - April 2021
+      <br />
+      <br />
+      Taught students cognitive, linguistic, and emotional development to 
+      promote well-roundedness.
+    </>
+  }
+  />
      
 
      
