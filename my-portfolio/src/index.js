@@ -6,6 +6,7 @@ import Carousel from './components/Carousel';
 import ImageCard  from './components/ImageCard';
 import Skill  from './components/ProgressBar';
 import ContactSection  from './components/ContactSection';
+import ChuckNorrisJoke from './components/ChuckNorrisJoke';
 import { SingleImageTextSection, DoubleImageTextSection, PlainLightSection }  from './components/section';
 import React, { useState } from 'react';
 import './index.css'; 
@@ -77,6 +78,8 @@ const App = () => {
       <Navbar />
       
       <Carousel images={images} />
+
+      <ChuckNorrisJoke />
       
       <SingleImageTextSection
         id="section1"
@@ -227,7 +230,12 @@ const App = () => {
         
      
         <SkillsSection />
-        <ContactSection title="Reach Out to Me" imageSrc={contact_images} contacts={contactDetails} />     
+
+        <ContactSection 
+        id="section8" 
+        title="Reach Out to Me"
+         imageSrc={contact_images} 
+         contacts={contactDetails} />     
     </div>
   );
 };

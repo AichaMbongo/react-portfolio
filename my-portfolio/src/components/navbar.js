@@ -25,9 +25,7 @@ const Navbar = () => {
               About Me <span className="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
-                <a class="nav-link" href="#section2">Education</a>
-            </li>
+         
             <li class="nav-item">
                 <a class="nav-link" href="#section3">Projects</a>
             </li>
@@ -38,13 +36,8 @@ const Navbar = () => {
                 <a class="nav-link" href="#section5">Skills</a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#section6">References</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#section7">Hobbies</a>
-            </li>
+        
+           
 
             <li class="nav-item">
                 <a class="nav-link" href="#section8">Contacts</a>

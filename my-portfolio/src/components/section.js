@@ -3,7 +3,7 @@ import React from 'react';
 
 const SingleImageTextSection = ({ id, title, imageSrc, description, link }) => {
   return (
-    <section id={id} className="container mt-4 mb-4 col-md-12">
+    <section id={id} className="container mt-4 mb-4 col-md-12 ">
       <div className="card mb-4 rounded col-md-12 bg-light mb-4 shadow-lg">
         <div className="row g-0">
           <div className="col-md-4 rounded">
