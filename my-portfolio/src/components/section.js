@@ -1,7 +1,7 @@
 // Section.js
 import React from 'react';
 
-const SingleImageTextSection = ({ id, title, imageSrc, description }) => {
+const SingleImageTextSection = ({ id, title, imageSrc, description, link }) => {
   return (
     <section id={id} className="container mt-4 mb-4 col-md-12">
       <div className="card mb-4 rounded col-md-12 bg-light mb-4 shadow-lg">
@@ -14,6 +14,8 @@ const SingleImageTextSection = ({ id, title, imageSrc, description }) => {
             <div className="card-body">
               <h5 className="card-title">{title}</h5>
               <p className="card-text">{description}</p>
+              {link && <a href={link} target="_blank">Click to View Project</a>}
+
             </div>
           </div>
         </div>
