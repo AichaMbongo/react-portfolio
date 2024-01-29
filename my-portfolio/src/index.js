@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
 import ImageCard  from './components/ImageCard';
 import Skill  from './components/ProgressBar';
+import ContactSection  from './components/ContactSection';
 import { SingleImageTextSection, DoubleImageTextSection, PlainLightSection }  from './components/section';
 import React, { useState } from 'react';
 import './index.css'; 
@@ -15,24 +16,35 @@ const App = () => {
     { id: 2, src: '/back1.png', alt: 'Image 2' },
     { id: 3, src: '/back3.png', alt: 'Image 3' },
   ];
+
+  const contact_images = '/aicha1.png'
+
+  const contactDetails = [
+    { iconSrc: '/phone.jpg', link: '#', value: '+254 770998729' },
+    { iconSrc: '/gmail.png', link: 'mailto:zindamoyen2@gmail.com', value: 'zindamoyen2@gmail.com' },
+    { iconSrc: '/linkedin.png', link: 'https://www.linkedin.com/in/aicha-myriam-mbongo-zindamoyen-3ab1a9263/', value: 'My LinkedIn Profile' },
+    { iconSrc: '/tiktok.png', link: 'https://www.tiktok.com/@aicha_mbongo', value: 'My TikTok Profile' },
+    // Add more contact details as needed
+  ];
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleText = (cardId) => {
     const dots = document.getElementById(`dots-${cardId}`);
     const moreText = document.getElementById(`more-${cardId}`);
     const btnText = document.getElementById(`readMoreBtn-${cardId}`);
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read More";
-      moreText.style.display = "none";
+
+    if (dots.style.display === 'none') {
+      dots.style.display = 'inline';
+      btnText.innerHTML = 'Read More';
+      moreText.style.display = 'none';
     } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read Less";
-      moreText.style.display = "inline";
+      dots.style.display = 'none';
+      btnText.innerHTML = 'Read Less';
+      moreText.style.display = 'inline';
     }
   };
-
+  
   const skills = [
     { name: 'React.js', value: 80, color: '' },
     { name: 'Django Framework', value: 70, color: 'success' },
@@ -215,7 +227,7 @@ const App = () => {
         
      
         <SkillsSection />
-     
+        <ContactSection title="Reach Out to Me" imageSrc={contact_images} contacts={contactDetails} />     
     </div>
   );
 };
